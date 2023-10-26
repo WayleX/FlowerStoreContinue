@@ -3,7 +3,7 @@ package com.example.demo.flowers;
 //import jakarta.persistence.Entity;
 //import jakarta.persistence.Id;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
+//import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 
@@ -23,7 +23,8 @@ public class Flower {
         this.price = 0;
         this.flowerType = FlowerType.CHAMOMILE;    
     }
-    public Flower(double sepallength, FlowerColor color, double price, FlowerType type) {
+    public Flower(double sepallength, FlowerColor color, double price,
+     FlowerType type) {
         this.sepalLength = sepalLength;
         this.color = color;
         this.price = price;
