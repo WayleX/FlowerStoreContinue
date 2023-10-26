@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/flower/payment/")
 public class CreditCardPaymentStrategy implements basicpay{
     @GetMapping("/creditcard/")
+    //public String pay(double price){
     public String pay(){
         return "Credit card";
     }
