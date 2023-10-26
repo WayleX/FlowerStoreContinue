@@ -1,9 +1,9 @@
 package com.example.demo.flowers.deliverstrategy;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
-import com.example.demo.flowers.Item;
-interface basicdeliver {
+//import com.example.demo.flowers.Item;
+interface BasicDeliver {
     //public String deliver(ArrayList<Item>){
-    public String deliver();
+    String deliver();
 }

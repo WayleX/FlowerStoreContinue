@@ -19,7 +19,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class FlowerController {
     @GetMapping("/list/")
     public List<Flower> hello() {
-        return List.of(new Flower(10, FlowerColor.BLUE, 30, FlowerType.CHAMOMILE));
+        int sep = 10;
+        double price = 10;
+        return List.of(new Flower(sep,
+         FlowerColor.BLUE, price, FlowerType.CHAMOMILE));
     }
 
     @GetMapping("/payment/")
@@ -28,12 +31,12 @@ public class FlowerController {
     }
 
     @GetMapping("/payment/success/")
-    public String pay_success() {
+    public String paysuccess() {
         return "Order confirmed";
     }
 
     @GetMapping("/payment/failed/")
-    public String pay_failed() {
+    public String payfailed() {
         return "Order declined";
     }
 
@@ -43,12 +46,12 @@ public class FlowerController {
     }
 
     @GetMapping("/deliver/success/")
-    public String deliver_success() {
+    public String deliversuccess() {
         return "Deliver confirmed";
     }
 
     @GetMapping("/deliver/failed/")
-    public String deliver_failed() {
+    public String deliverfailed() {
         return "Deliver declined";
     }
 }

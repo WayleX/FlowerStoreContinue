@@ -19,7 +19,7 @@ public enum FlowerColor {
         return stringRepresentation;
     }
     @JsonValue
-    public String getValue(){
+    public String getValue() {
         return stringRepresentation;
     }
 }
