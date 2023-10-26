@@ -17,10 +17,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("api/flower/")
 public class FlowerController {
+    private final int sep = 10;
+    private final double price = 10;
     @GetMapping("/list/")
     public List<Flower> hello() {
-        int sep = 10;
-        double price = 10;
         return List.of(new Flower(sep,
          FlowerColor.BLUE, price, FlowerType.CHAMOMILE));
     }
